@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+span{
+    /* background: url("https://cdn0.iconfinder.com/data/icons/sweets/128/heart_love_pink.png"); */
+    background: url("https://cdn2.iconfinder.com/data/icons/lin/128/14.png");
+    /* background: url("https://cdn4.iconfinder.com/data/icons/smooth-3d-for-online-stores/512/heart.png"); */
+    /* background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png"); */
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background-size: cover;
+    top: 90%;
+    pointer-events: none;
+    animation: animation 7s linear;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+
+    100% {
+        transform: translate(-50%,-2000%);
+        opacity: 0;
+        filter: hue-rotate(810deg);
+    }
+}
